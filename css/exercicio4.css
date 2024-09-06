@@ -7,7 +7,9 @@
 
 body{
     width: 100%;
+    padding: 50px;
 }
+
 
 nav{
     display: flex;
@@ -21,34 +23,32 @@ ul{
     gap: 24px;
 }
 
-nav i {
-    font-size: 30px;
+nav li {
+    font-size: 18px;
+    font-weight: 300;
 }
 
-
-.imagem-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container{
+    gap: 2rem;
+    margin-top: 50px;
 }
 
 img{
     border-radius: 48%;
-    width: 60%;
+    width: 50%;
 }
 
 .texto-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 24px;
+    align-items: flex-start;
     gap: 2rem;
+    width: 50%;
 }
 
 .texto-container h1{
-    font-size: 34px;
+    font-size: 48px;
 }
 
 .texto-container p{
@@ -66,13 +66,13 @@ button{
 }
 
 @media(min-width: 992px){
-.container{
-    display: flex;
-    justify-content: center;
-    flex-direction: row-reverse;
-}
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+    }
 
-.imagem-container{
-    display: flex;
+    .imagem-container{
+        display: flex;
 }
 }
